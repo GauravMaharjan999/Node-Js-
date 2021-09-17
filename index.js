@@ -87,4 +87,6 @@ let anotherString = strs.map(function(element, index) {
     return element + 2;
 })
 
+
+
 console.log(anotherString);
