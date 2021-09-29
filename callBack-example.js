@@ -8,9 +8,28 @@
 
 // callBackExample(2, 2, add);
 
+const makeStringUpperCase = (string) => {
+  return string.toUpperCase();
+};
 
-if (1 !== "2") {
-    console.log("It is true")
-} else {
-    console.log("It is false")
+const makeStringLowerCase = (string) =>{
+    return string.toLowerCase();
+
 }
+
+const padStart = (string) =>{
+    return string.padStart(20,"0")
+}
+
+const callBackFunction = (input, callBack) =>{
+
+    let result = "Hello" +" "+ input;
+    return callBack(result); 
+
+}
+
+console.log(callBackFunction("world",makeStringUpperCase));
+console.log(callBackFunction("WORLD",makeStringLowerCase));
+console.log(callBackFunction("WORLD",padStart));
+
+
